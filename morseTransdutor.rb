@@ -176,6 +176,141 @@ class MorseTransdutor
       in [:q17, SPACE]
         @estado = :q0
         @texto_traduzido << 'f'
+      
+      in [:q18, POINT]
+        @estado = :q29
+  
+      in [:q18, DASH]
+        @estado = :q42
+  
+      in [:q19, SPACE]
+        @estado = :q0
+        @texto_traduzido << 'l'
+  
+      in [:q20, POINT]
+        @estado = :q30
+  
+      in [:q21, SPACE]
+        @estado = :q0
+        @texto_traduzido << 'p'
+  
+      in [:q22, SPACE]
+        @estado = :q0
+        @texto_traduzido << 'j'
+  
+      in [:q22, DASH]
+        @estado = :q37
+  
+      in [:q23, SPACE]
+        @estado = :q0
+        @texto_traduzido << 'b'
+  
+      in [:q23, POINT]
+        @estado = :q31
+  
+      in [:q24, SPACE]
+        @estado = :q0
+        @texto_traduzido << 'x'
+  
+      in [:q25, SPACE]
+        @estado = :q0
+        @texto_traduzido << 'c'
+  
+      in [:q26, SPACE]
+        @estado = :q0
+        @texto_traduzido << 'y'
+  
+      in [:q27, SPACE]
+        @estado = :q0
+        @texto_traduzido << 'z'
+  
+      in [:q27, POINT]
+        @estado = :q38
+  
+      in [:q28, SPACE]
+        @estado = :q0
+        @texto_traduzido << 'q'
+  
+      in [:q29, POINT]
+        @estado = :q3
+  
+      in [:q30, DASH]
+        @estado = :q34
+  
+      in [:q31, SPACE]
+        @estado = :q0
+        @texto_traduzido << '6'
+  
+      in [:q31, DASH]
+        @estado = :q35
+  
+      in [:q32, DASH]
+        @estado = :q36
+  
+      in [:q33, SPACE]
+        @estado = :q0
+        @texto_traduzido << '?'
+  
+      in [:q34, SPACE]
+        @estado = :q0
+        @texto_traduzido << '.'
+  
+      in [:q35, SPACE]
+        @estado = :q0
+        @texto_traduzido << '-'
+  
+      in [:q36, SPACE]
+        @estado = :q0
+        @texto_traduzido << ','
+  
+      in [:q37, SPACE]
+        @estado = :q0
+        @texto_traduzido << '1'
+  
+      in [:q38, SPACE]
+        @estado = :q0
+        @texto_traduzido << '7'
+  
+      in [:q39, SPACE]
+        @estado = :q0
+        @texto_traduzido << '3'
+  
+      in [:q40, SPACE]
+        @estado = :q0
+        @texto_traduzido << '5'
+  
+      in [:q41, SPACE]
+        @estado = :q0
+        @texto_traduzido << '4'
+  
+      in [:q42, SPACE]
+        @estado = :q0
+        @texto_traduzido << '2'
+  
+      in [:q43, POINT]
+        @estado = :q44
+  
+      in [:q44, SPACE]
+        @estado = :q0
+        @texto_traduzido << '8'
+  
+      in [:q45, POINT]
+        @estado = :q46
+  
+      in [:q45, DASH]
+        @estado = :q47
+  
+      in [:q46, SPACE]
+        @estado = :q0
+        @texto_traduzido << '9'
+  
+      in [:q47, SPACE]
+        @estado = :q0
+        @texto_traduzido << '0'
+        
+      else
+        @texto_traduzido = 'Sequência inválida'
+        @estado = :q0
       end
     end
   
